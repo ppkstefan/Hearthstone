@@ -1,0 +1,212 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Image */
+.banner-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Featured Decks Section */
+.featured-deck {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-deck h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.deck {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deck:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.deck img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.deck h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.deck p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Deck List Section */
+.deck-list {
+    width: 100%;
+}
+
+.deck-item {
+    display: inline-block;
+    width: 30%;
+    margin: 15px 0;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deck-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Hearthstone Classes Section */
+.hearthstone-classes {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.hearthstone-classes h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.class-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.class {
+    width: 30%;
+    margin: 20px 0;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.class-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.class h3 {
+    font-size: 20px;
+    color: #1d1d1d;
+    margin: 10px 0;
+}
+
+.class p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .deck-item, .class {
+        width: 45%;
+    }
+
+    .deck-list, .class-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .deck-item, .class {
+        width: 100%;
+    }
+}
